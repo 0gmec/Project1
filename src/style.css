@@ -5,6 +5,18 @@
 
 
 #map { 
-    height: 500px;
+    height: 180px;
 
+ }
+
+ @media (min-width: 700px) {
+    #map {
+        height: 20rem;
+    }
+ }
+
+ @media (min-width: 1000) {
+    #map {
+        height: 500px;
+    }
  }

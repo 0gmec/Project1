@@ -17,17 +17,20 @@
   
   <title>Frontend Mentor | IP Address Tracker</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Header -->
+  <Header class="text-center-py-8">
+    <h1 class="text-2xl font-bold">IP Address Tracker</h1>
+    <button id="search-btn" class="bg-blue-600" text-white="px-4 ml-2 rounded">Search button</button>
+  </Header>
+  <input type="text" id="input" placeholder="Search for any IP address or domain" class="border p-2 rounded">
+  
+  <img class="bg-[url('/images/pattern-bg-desktop.png')] bg-no-repeat bg-cover bg-center min-h-screen">
   
   
 
-  <div id="map"></div>
+  <div id="map" class="w-full h-full md:h-96 lg:h-[500px]"></div>
 
   IP Address Tracker
 
