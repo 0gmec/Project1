@@ -1,9 +1,6 @@
 /* tailwind */
 
-@tailwind base;
-@tailwind componenets;
-@tailwind utilities;
-
+@import "tailwindcss";
 
 
 #map { height: 180px; }

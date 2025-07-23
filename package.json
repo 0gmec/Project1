@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
     "@types/node": "^24.1.0",
     "leaflet": "^1.9.4",
     "typescript": "^5.8.3"
