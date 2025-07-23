@@ -1,0 +1,9 @@
+/* tailwind */
+
+@tailwind base;
+@tailwind componenets;
+@tailwind utilities;
+
+
+
+#map { height: 180px; }
