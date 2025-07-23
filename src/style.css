@@ -4,4 +4,7 @@
 @import "tailwindcss";
 
 
-#map { height: 180px; }
+#map { 
+    height: 500px;
+
+ }
