@@ -32,50 +32,29 @@
         </button>
       </form>
       <div id="ipat-container">
-        <section class="ipat-item">
-          <div>
-            <h4> IP ADDRESS </h4>
-            <p></p>
-             </div>
-            <div class="ipat-item">
-              <h4> LOCATION </h4>
-              <p></p>
-            </div>
-            <div class="ipat-item">
-              <h4> TIMEZONE </h4>
-              <p></p>
-            </div>
-            <div class= "ipat-item">
-              <h4> ISP </h4>
-              <p></p>
-            </div>
-          
-       
+        <div class="ipat-item">
+          <p>IP ADDRESS</p>
+          <span id="ipdisplay"></span>
+        </div>
+        <div class="ipat-item">
+          <p>LOCATION </p>
+          <span id="iplocation"></span>
+        </div>
+        <div class="ipat-item">
+          <p>TIMEZONE</p>
+          <span id="iptimezone"></span>
+        </div>
+        <div class="ipat-item">
+          <p> ISP </p>
+          <span id="ipisp"></span>
+        </div>
       </div>
     </header>
   </div>
 
-
-
-
-
-
   <div id="map" class="w-full h-full md:h-96 lg:h-[500px]"></div>
 
-  IP Address Tracker
 
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-  UTC <!-- add offset value dynamically using the API -->
-  ISP
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="./src/app.js"></script>

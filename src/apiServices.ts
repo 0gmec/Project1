@@ -1,8 +1,20 @@
 //geo.ipify.org/api/v2/country?apiKey=at_7a0qSVnGB6lWBskosVioOuJ0obMUf&ipAddress=8.8.8.8
 
+// const ipDisplay = document.getElementById("ipdisplay")
+// const locationDisplay = document.getElementById("locationdisplay")
+// const timezoneDisplay = document.getElementById("timezone")
+// const ispDisplay = document.getElementById("isp")
+
+
 const myApiKey = "at_7a0qSVnGB6lWBskosVioOuJ0obMUf"
 const fetchIPATData = async (ipat = "") =>{
-    const url = `http://geo.ipify.org/api/v2/country?apiKey=at_7a0qSVnGB6lWBskosVioOuJ0obMUf&ipAddress=8.8.8.8`
+    const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${myApiKey}&ipAddress=${ipat}`
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
 try {
     const response = await fetch(url)
@@ -11,16 +23,14 @@ try {
     }
     const data = await response.json()
     console.log("Fetched IPAT Data:" , data)
-    return data
+    return {
+        "ip": data.ip,
+        "location": data.location,
+        "isp": data.isp
+    }
 }catch(error) {
     console.error("fetch error:" , error)
     alert("Error fetching IPAT data. Error")
 }
-
-
-
-
-
-
 
 }
