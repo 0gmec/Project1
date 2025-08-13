@@ -26,8 +26,9 @@ try {
     const data = await response.json()
     console.log("Fetched IPAT Data:" , data)
 
-    const iaptform = document.getElementById("ipat-form")
-    const ipdisplay = document.getElementById("ipdisplay")
+    
+const iaptform = document.getElementById("ipat-form")
+const ipdisplay = document.getElementById("ipdisplay")
 const iplocation = document.getElementById("iplocation")
 const iptimezone = document.getElementById("iptimezone")
 const ipisp = document.getElementById("ipisp")
@@ -35,18 +36,12 @@ const ipisp = document.getElementById("ipisp")
 iaptform!.addEventListener("submit", event => {
 event.preventDefault()
 
-
 }) 
 
 ipdisplay!.textContent = data.ip
 iplocation!.textContent = `${data.location.city}, ${data.location.country}`
 iptimezone!.textContent = `UTC ${data.location.timezone}`
 ipisp!.textContent = data.isp
-
-
-    
-
-    
     
 }catch(error) {
     console.error("fetch error:" , error)
