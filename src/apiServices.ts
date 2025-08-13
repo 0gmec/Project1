@@ -54,7 +54,7 @@ ipisp!.textContent = data.isp
 }
 
 }
-<<<<<<< HEAD
-=======
+
+
 fetchIPATData("8.8.8.8")
->>>>>>> 15033d0 (updating files)
+
