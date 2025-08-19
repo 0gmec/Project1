@@ -26,8 +26,7 @@ try {
     const data = await response.json()
     console.log("Fetched IPAT Data:" , data)
 
-    
-const iaptform = document.getElementById("ipat-form")
+ const iaptform = document.getElementById("ipat-form")
 const ipdisplay = document.getElementById("ipdisplay")
 const iplocation = document.getElementById("iplocation")
 const iptimezone = document.getElementById("iptimezone")
